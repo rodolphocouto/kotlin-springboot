@@ -1,0 +1,7 @@
+spring:
+  application:
+    name: Kotlin Spring Boot Sample Project
+  resources:
+    add-mappings: false
+server:
+  port: 8080
