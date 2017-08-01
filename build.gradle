@@ -9,16 +9,29 @@ version '1.0'
 
 repositories {
     jcenter()
+    maven { setUrl("https://dl.bintray.com/kotlin/exposed") }
 }
 
 dependencies {
-    // kotlin
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jre8"
-    compile "org.jetbrains.kotlin:kotlin-noarg"
-    compile "org.jetbrains.kotlin:kotlin-allopen"
+    // Kotlin
+    compile "org.jetbrains.kotlin:kotlin-stdlib"
+    compile "org.jetbrains.kotlin:kotlin-reflect"
 
-    // springBoot
+    // SpringBoot
     compile "org.springframework.boot:spring-boot-starter-web"
+    compile "org.springframework.boot:spring-boot-starter-hateoas"
+    compile "org.springframework.boot:spring-boot-starter-jdbc"
+    testCompile "org.springframework.boot:spring-boot-starter-test"
+
+    // Exposed
+    compile "org.jetbrains.exposed:exposed:0.8.5"
+    compile "org.jetbrains.exposed:spring-transaction:0.8.5"
+
+    // Flyway
+    compile "org.flywaydb:flyway-core"
+
+    // H2
+    compile "com.h2database:h2"
 }
 
 compileKotlin {
