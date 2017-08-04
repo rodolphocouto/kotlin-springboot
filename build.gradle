@@ -23,6 +23,9 @@ dependencies {
     compile "org.springframework.boot:spring-boot-starter-jdbc"
     testCompile "org.springframework.boot:spring-boot-starter-test"
 
+    // Jackson
+    compile "com.fasterxml.jackson.datatype:jackson-datatype-joda"
+
     // Exposed
     compile "org.jetbrains.exposed:exposed:0.8.5"
     compile "org.jetbrains.exposed:spring-transaction:0.8.5"
