@@ -1,4 +1,4 @@
-package org.kotlin.springboot.model
+package org.kotlin.springboot.domain.entity
 
 enum class Industry(val id: Int) {
 

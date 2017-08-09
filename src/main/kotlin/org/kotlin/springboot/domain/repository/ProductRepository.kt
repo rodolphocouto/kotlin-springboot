@@ -1,7 +1,7 @@
-package org.kotlin.springboot.repository
+package org.kotlin.springboot.domain.repository
 
-import org.kotlin.springboot.model.Company
-import org.kotlin.springboot.model.Product
+import org.kotlin.springboot.domain.entity.Company
+import org.kotlin.springboot.domain.entity.Product
 
 interface ProductRepository {
 

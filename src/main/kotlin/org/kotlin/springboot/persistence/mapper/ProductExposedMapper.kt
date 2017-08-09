@@ -1,9 +1,9 @@
-package org.kotlin.springboot.repository.impl.mapper
+package org.kotlin.springboot.persistence.mapper
 
 import org.jetbrains.exposed.sql.ResultRow
 import org.jetbrains.exposed.sql.Table
-import org.kotlin.springboot.model.Industry
-import org.kotlin.springboot.model.Product
+import org.kotlin.springboot.domain.entity.Industry
+import org.kotlin.springboot.domain.entity.Product
 
 object TProduct : Table("product") {
     val id = integer("id")

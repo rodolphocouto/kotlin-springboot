@@ -1,13 +1,13 @@
-package org.kotlin.springboot.repository.impl
+package org.kotlin.springboot.persistence.repository
 
 import org.jetbrains.exposed.sql.and
 import org.jetbrains.exposed.sql.select
-import org.kotlin.springboot.model.Company
-import org.kotlin.springboot.model.Product
-import org.kotlin.springboot.repository.ProductRepository
-import org.kotlin.springboot.repository.impl.mapper.TCompany
-import org.kotlin.springboot.repository.impl.mapper.TProduct
-import org.kotlin.springboot.repository.impl.mapper.toProduct
+import org.kotlin.springboot.domain.entity.Company
+import org.kotlin.springboot.domain.entity.Product
+import org.kotlin.springboot.domain.repository.ProductRepository
+import org.kotlin.springboot.persistence.mapper.TCompany
+import org.kotlin.springboot.persistence.mapper.TProduct
+import org.kotlin.springboot.persistence.mapper.toProduct
 import org.springframework.stereotype.Repository
 
 @Repository

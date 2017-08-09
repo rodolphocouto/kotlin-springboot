@@ -1,4 +1,4 @@
-package org.kotlin.springboot.model
+package org.kotlin.springboot.domain.entity
 
 import org.joda.time.LocalDate
 import org.springframework.hateoas.core.Relation
@@ -12,3 +12,5 @@ data class Company(var id: Int,
                    var employees: Int,
                    var headquarters: String,
                    var founded: LocalDate)
+
+class CompanyNotFoundException : Exception()

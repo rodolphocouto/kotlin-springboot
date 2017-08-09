@@ -1,6 +1,6 @@
-package org.kotlin.springboot.repository
+package org.kotlin.springboot.domain.repository
 
-import org.kotlin.springboot.model.Company
+import org.kotlin.springboot.domain.entity.Company
 
 interface CompanyRepository {
 

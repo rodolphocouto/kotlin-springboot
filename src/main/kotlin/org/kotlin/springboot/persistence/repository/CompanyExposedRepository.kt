@@ -1,11 +1,11 @@
-package org.kotlin.springboot.repository.impl
+package org.kotlin.springboot.persistence.repository
 
 import org.jetbrains.exposed.sql.select
 import org.jetbrains.exposed.sql.selectAll
-import org.kotlin.springboot.model.Company
-import org.kotlin.springboot.repository.CompanyRepository
-import org.kotlin.springboot.repository.impl.mapper.TCompany
-import org.kotlin.springboot.repository.impl.mapper.toCompany
+import org.kotlin.springboot.domain.entity.Company
+import org.kotlin.springboot.domain.repository.CompanyRepository
+import org.kotlin.springboot.persistence.mapper.TCompany
+import org.kotlin.springboot.persistence.mapper.toCompany
 import org.springframework.stereotype.Repository
 
 @Repository

@@ -1,9 +1,9 @@
-package org.kotlin.springboot.service
+package org.kotlin.springboot.domain.service
 
-import org.kotlin.springboot.model.Company
-import org.kotlin.springboot.model.Product
-import org.kotlin.springboot.repository.CompanyRepository
-import org.kotlin.springboot.repository.ProductRepository
+import org.kotlin.springboot.domain.entity.Company
+import org.kotlin.springboot.domain.entity.Product
+import org.kotlin.springboot.domain.repository.CompanyRepository
+import org.kotlin.springboot.domain.repository.ProductRepository
 import org.springframework.stereotype.Service
 import org.springframework.transaction.annotation.Transactional
 

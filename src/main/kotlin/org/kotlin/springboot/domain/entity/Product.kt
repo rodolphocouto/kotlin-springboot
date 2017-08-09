@@ -1,4 +1,4 @@
-package org.kotlin.springboot.model
+package org.kotlin.springboot.domain.entity
 
 import com.fasterxml.jackson.annotation.JsonIgnore
 import org.springframework.hateoas.core.Relation
@@ -9,3 +9,5 @@ data class Product(var id: Int,
                    var website: String,
                    var industry: Industry,
                    @JsonIgnore var company: Company)
+
+class ProductNotFoundException : Exception()

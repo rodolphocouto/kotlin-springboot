@@ -1,8 +1,8 @@
-package org.kotlin.springboot.repository.impl.mapper
+package org.kotlin.springboot.persistence.mapper
 
 import org.jetbrains.exposed.sql.ResultRow
 import org.jetbrains.exposed.sql.Table
-import org.kotlin.springboot.model.Company
+import org.kotlin.springboot.domain.entity.Company
 
 object TCompany : Table("company") {
     val id = integer("id")
